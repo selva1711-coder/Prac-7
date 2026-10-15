@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Image Gallery</title>
+ <style>
+  body{
+    font-family:Arial;
+    background-color:#f0f8ff;
+    text-align:center;
+  }
+
+  h2{
+    color:#555;
+    margin-top:30px;
+  }
+
+   .gallery{
+     display:grid;
+     grid-template-columns:repeat(4,1fr);
+     gap:12px;
+     max-width:650px;
+     margin:30px auto;
+    padding:15px;
+   }
+
+  .gallery img{
+     width:100%;
+     height:100px;
+     object-fit:cover;
+     border:3px solid white;
+     box-sizing:border-box;
+  }
+
+  @media (max-width:600px){
+    .gallery{
+       grid-template-columns:repeat(2,1fr);
+       max-width:350px;
+    }
+     .gallery img{
+        height:100px;
+    }
+  }
+
+ </style>
+</head>
+
+<body>
+  <h2>RESPONSIVE IMAGE GALLERY</h2>
+  
+  <div class="gallery">
+
+    <img src="task spheree.jpeg" alt="task sphere">
+    <img src="task spheree.jpeg" alt="task sphere">
+    <img src="task spheree.jpeg" alt="task sphere">
+    <img src="task spheree.jpeg" alt="task sphere">
+    <img src="task spheree.jpeg" alt="task sphere">
+    <img src="task spheree.jpeg" alt="task sphere">
+    <img src="task spheree.jpeg" alt="task sphere">
+    <img src="task spheree.jpeg" alt="task sphere">
+
+   </div>
+
+</body>
+</html>
+
+
